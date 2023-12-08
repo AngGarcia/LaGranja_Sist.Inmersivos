@@ -43,6 +43,7 @@ public class animalGrazing : MonoBehaviour
         isDone = false;
 
         animator.SetInteger("State", 1);
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
         agent.isStopped = true;
 
         waitTime = Random.Range(3f, 5f);
@@ -50,7 +51,7 @@ public class animalGrazing : MonoBehaviour
         while (counter < waitTime)
         {
             counter += Time.deltaTime;
-            Debug.Log("EAT: " + counter + " seconds");
+            //Debug.Log("EAT: " + counter + " seconds");
 
             yield return null;
         }
@@ -58,15 +59,16 @@ public class animalGrazing : MonoBehaviour
         float RandX = Random.Range(lowerLimit.x, upperLimit.x);
         float RandZ = Random.Range(lowerLimit.y, upperLimit.y);
         path = new Vector3(RandX, transform.position.y, RandZ);
-        Debug.Log(path);
+        //Debug.Log(path);
         this.transform.LookAt(path);
 
         counter = 0;
         while (true)
         {
             counter += Time.deltaTime;
-            Debug.Log("WALK: " + counter + " seconds");
+            //Debug.Log("WALK: " + counter + " seconds");
             animator.SetInteger("State", 0);
+            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             agent.isStopped = false;
             agent.speed = speed;
             agent.SetDestination(path);

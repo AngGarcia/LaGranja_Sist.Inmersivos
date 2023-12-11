@@ -22,12 +22,13 @@ public class Shit : MonoBehaviour
         if(other.gameObject.tag=="Shovel" && !shitGameManager.Instance.shitOnShovel.activeSelf)
         {
             //shitGameManager.Instance.shitCounter++;
+            this.gameObject.SetActive(false);
             shitGameManager.Instance.shitOnShovel.SetActive(true);
-            if(shitGameManager.Instance.shitCounter==4)
-            {
-                shitGameManager.Instance.hugeShit.SetActive(false);
+            //if(shitGameManager.Instance.shitCounter==4)
+            //{
+            //    shitGameManager.Instance.hugeShit.SetActive(false);
 
-            }
+            //}
 
         }
     }

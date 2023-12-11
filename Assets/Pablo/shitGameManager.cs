@@ -13,7 +13,11 @@ public class shitGameManager : MonoBehaviour
     [SerializeField] private GameObject shitOnBucket4;
     [SerializeField] private GameObject shitOnBucket5;
     [SerializeField] public int shitCounter;
-    [SerializeField] public GameObject hugeShit;
+    [SerializeField] public GameObject shitOnFloor1;
+    [SerializeField] public GameObject shitOnFloor2;
+    [SerializeField] public GameObject shitOnFloor3;
+    [SerializeField] public GameObject shitOnFloor4;
+    [SerializeField] public GameObject shitOnFloor5;
     // Start is called before the first frame update
 
     public static shitGameManager Instance
@@ -36,8 +40,12 @@ public class shitGameManager : MonoBehaviour
 
     void Start()
     {
-        hugeShit.SetActive(true);
-        shitCounter= 0;
+        shitOnFloor1.SetActive(true);
+        shitOnFloor2.SetActive(true);
+        shitOnFloor3.SetActive(true);
+        shitOnFloor4.SetActive(true);
+        shitOnFloor5.SetActive(true);
+        shitCounter = 0;
         shitOnShovel.SetActive(false);
         shitOnBucket1.SetActive(false);
         shitOnBucket2.SetActive(false);
@@ -78,8 +86,12 @@ public class shitGameManager : MonoBehaviour
     private IEnumerator respawnShit() 
     {
         yield return new WaitForSeconds(60.0f);
-        
-        hugeShit.SetActive(true);
+
+        shitOnFloor1.SetActive(true);
+        shitOnFloor2.SetActive(true);
+        shitOnFloor3.SetActive(true);
+        shitOnFloor4.SetActive(true);
+        shitOnFloor5.SetActive(true);
         shitOnBucket1.SetActive(false);
         shitOnBucket2.SetActive(false);
         shitOnBucket3.SetActive(false);

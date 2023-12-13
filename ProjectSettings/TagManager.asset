@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shovel
+  - InteractionManager
+  - Shit
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - Farm
   - Egg
   - Shovel
-  - 
+  - Shit
   - 
   - 
   - 

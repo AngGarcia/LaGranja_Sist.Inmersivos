@@ -1,23 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class shitGameManager : MonoBehaviour
 {
     private static shitGameManager instance;
-    [SerializeField] public GameObject shitOnShovel;
+    //[SerializeField] public GameObject shitOnShovel;
     [SerializeField] private GameObject shitOnBucket1;
     [SerializeField] private GameObject shitOnBucket2;
     [SerializeField] private GameObject shitOnBucket3;
     [SerializeField] private GameObject shitOnBucket4;
     [SerializeField] private GameObject shitOnBucket5;
     [SerializeField] public int shitCounter;
-    [SerializeField] public GameObject shitOnFloor1;
-    [SerializeField] public GameObject shitOnFloor2;
-    [SerializeField] public GameObject shitOnFloor3;
-    [SerializeField] public GameObject shitOnFloor4;
-    [SerializeField] public GameObject shitOnFloor5;
+    [SerializeField] private GameObject shitSpawner1;
+    [SerializeField] private GameObject shitSpawner2;
+    [SerializeField] private GameObject shitSpawner3;
+    [SerializeField] private GameObject shitSpawner4;
+    [SerializeField] private GameObject shitSpawner5;
+    [SerializeField] private GameObject Shit;
     // Start is called before the first frame update
 
     public static shitGameManager Instance
@@ -40,13 +42,9 @@ public class shitGameManager : MonoBehaviour
 
     void Start()
     {
-        shitOnFloor1.SetActive(true);
-        shitOnFloor2.SetActive(true);
-        shitOnFloor3.SetActive(true);
-        shitOnFloor4.SetActive(true);
-        shitOnFloor5.SetActive(true);
+        
         shitCounter = 0;
-        shitOnShovel.SetActive(false);
+        //shitOnShovel.SetActive(false);
         shitOnBucket1.SetActive(false);
         shitOnBucket2.SetActive(false);
         shitOnBucket3.SetActive(false);
@@ -58,24 +56,24 @@ public class shitGameManager : MonoBehaviour
     void Update()
     {
 
-        if (shitCounter == 1)
+        if (shitCounter == 2)
         {
             shitOnBucket1.SetActive(true);
         }
-        if (shitCounter == 2)
+        if (shitCounter == 4)
         {
             shitOnBucket2.SetActive(true);
         }
-        if (shitCounter == 3)
+        if (shitCounter == 6)
         {
             shitOnBucket3.SetActive(true);
         }
-        if (shitCounter == 4)
+        if (shitCounter == 8)
         {
             shitOnBucket4.SetActive(true);
             
         }
-        if (shitCounter == 5)
+        if (shitCounter == 10)
         {
             shitOnBucket5.SetActive(true);   
             shitCounter = 0;
@@ -85,18 +83,19 @@ public class shitGameManager : MonoBehaviour
 
     private IEnumerator respawnShit() 
     {
+        Debug.Log("ENTRA");
         yield return new WaitForSeconds(60.0f);
 
-        shitOnFloor1.SetActive(true);
-        shitOnFloor2.SetActive(true);
-        shitOnFloor3.SetActive(true);
-        shitOnFloor4.SetActive(true);
-        shitOnFloor5.SetActive(true);
+        Instantiate(Shit, shitSpawner1.transform.position, quaternion.identity);
+        Instantiate(Shit, shitSpawner2.transform.position, quaternion.identity);
+        Instantiate(Shit, shitSpawner3.transform.position, quaternion.identity);
+        Instantiate(Shit, shitSpawner4.transform.position, quaternion.identity);
+        Instantiate(Shit, shitSpawner5.transform.position, quaternion.identity);
         shitOnBucket1.SetActive(false);
         shitOnBucket2.SetActive(false);
         shitOnBucket3.SetActive(false);
         shitOnBucket4.SetActive(false);
         shitOnBucket5.SetActive(false);
-        shitOnShovel.SetActive(false);
+        //shitOnShovel.SetActive(false);
     }
 }

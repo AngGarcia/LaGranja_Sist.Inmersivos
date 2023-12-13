@@ -18,10 +18,19 @@ public class ShitContainer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Shovel" && shitGameManager.Instance.shitOnShovel.activeSelf)
+        //if (other.gameObject.tag == "Shovel" && shitGameManager.Instance.shitOnShovel.activeSelf)
+        //{
+        //    shitGameManager.Instance.shitCounter++;
+        //    shitGameManager.Instance.shitOnShovel.SetActive(false);
+
+        //}
+
+        if (other.gameObject.tag == "Shit")
         {
-            shitGameManager.Instance.shitCounter++;
-            shitGameManager.Instance.shitOnShovel.SetActive(false);
+            Debug.Log("HOLAAAA");
+            shitGameManager.Instance.shitCounter+=1;
+            //shitGameManager.Instance.shitOnShovel.SetActive(false);
+            Destroy(other.gameObject);
 
         }
     }

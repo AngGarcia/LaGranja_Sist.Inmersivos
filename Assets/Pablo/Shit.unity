@@ -1535,6 +1535,7 @@ MonoBehaviour:
   shitSpawner4: {fileID: 710009858}
   shitSpawner5: {fileID: 1877553517}
   Shit: {fileID: 7549180261569174531, guid: 5fcf4ccc2280464419de9de003b0c1af, type: 3}
+  timeToWaitForShitToRespawn: 10
 --- !u!1 &427459823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,6 +2159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710009859}
+  - component: {fileID: 710009860}
   m_Layer: 0
   m_Name: shitSpawner (4)
   m_TagString: Untagged
@@ -2180,6 +2182,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &710009860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710009858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6306355897edba7459f5091a162b10a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shitOnBucket: {fileID: 1770891438}
+  Shit: {fileID: 7549180261569174531, guid: 5fcf4ccc2280464419de9de003b0c1af, type: 3}
+  shitRespawnTimer: 7
 --- !u!1001 &734347934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3305,6 +3322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1178395820}
+  - component: {fileID: 1178395821}
   m_Layer: 0
   m_Name: shitSpawner (1)
   m_TagString: Untagged
@@ -3327,6 +3345,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1178395821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178395819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6306355897edba7459f5091a162b10a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shitOnBucket: {fileID: 939178855}
+  Shit: {fileID: 7549180261569174531, guid: 5fcf4ccc2280464419de9de003b0c1af, type: 3}
+  shitRespawnTimer: 3
 --- !u!1 &1191753353
 GameObject:
   m_ObjectHideFlags: 0
@@ -3878,6 +3911,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1351658318}
+  - component: {fileID: 1351658319}
   m_Layer: 0
   m_Name: shitSpawner (3)
   m_TagString: Untagged
@@ -3900,6 +3934,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1351658319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351658317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6306355897edba7459f5091a162b10a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shitOnBucket: {fileID: 801852280}
+  Shit: {fileID: 7549180261569174531, guid: 5fcf4ccc2280464419de9de003b0c1af, type: 3}
+  shitRespawnTimer: 6
 --- !u!1 &1357843999
 GameObject:
   m_ObjectHideFlags: 0
@@ -4547,6 +4596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1626915713}
+  - component: {fileID: 1626915714}
   m_Layer: 0
   m_Name: shitSpawner (2)
   m_TagString: Untagged
@@ -4569,6 +4619,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1626915714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626915712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6306355897edba7459f5091a162b10a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shitOnBucket: {fileID: 338670381}
+  Shit: {fileID: 7549180261569174531, guid: 5fcf4ccc2280464419de9de003b0c1af, type: 3}
+  shitRespawnTimer: 5
 --- !u!1001 &1746604756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4886,6 +4951,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1877553518}
+  - component: {fileID: 1877553519}
   m_Layer: 0
   m_Name: shitSpawner (5)
   m_TagString: Untagged
@@ -4908,6 +4974,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1877553519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877553517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6306355897edba7459f5091a162b10a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shitOnBucket: {fileID: 1289335212}
+  Shit: {fileID: 7549180261569174531, guid: 5fcf4ccc2280464419de9de003b0c1af, type: 3}
+  shitRespawnTimer: 2
 --- !u!1001 &2030248898
 PrefabInstance:
   m_ObjectHideFlags: 0

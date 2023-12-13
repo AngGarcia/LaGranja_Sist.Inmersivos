@@ -27,7 +27,7 @@ public class ShitContainer : MonoBehaviour
 
         if (other.gameObject.tag == "Shit")
         {
-            Debug.Log("HOLAAAA");
+            //Debug.Log("HOLAAAA");
             shitGameManager.Instance.shitCounter+=1;
             //shitGameManager.Instance.shitOnShovel.SetActive(false);
             Destroy(other.gameObject);

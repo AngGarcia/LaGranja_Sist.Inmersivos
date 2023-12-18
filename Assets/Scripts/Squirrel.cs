@@ -11,7 +11,6 @@ public class Squirrel : MonoBehaviour
     {
         if (other.tag == "Food")
         {
-            Debug.Log("Eat");
             animator.SetInteger("State", 1);
         }
     }
@@ -20,7 +19,6 @@ public class Squirrel : MonoBehaviour
     {
         if (other.tag == "Food")
         {
-            Debug.Log("Stop");
             animator.SetInteger("State", 0);
         }
     }

@@ -26,6 +26,6 @@ public class respawnShit : MonoBehaviour
     {
         shitOnBucket.SetActive(false);
         yield return new WaitForSeconds(shitRespawnTimer);
-        Instantiate(Shit, this.transform.position, quaternion.identity);       
+        Instantiate(Shit, new Vector3(transform.position.x, Shit.transform.position.y, transform.position.z), quaternion.identity);       
     }
 }

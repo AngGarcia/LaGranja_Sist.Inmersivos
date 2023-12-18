@@ -937,9 +937,9 @@ GameObject:
   - component: {fileID: 8023226663435237891}
   - component: {fileID: 5766000353523487164}
   - component: {fileID: 3507408368350698151}
+  - component: {fileID: 5592391549358619557}
   - component: {fileID: 154191113821973321}
   - component: {fileID: 1193749188060626840}
-  - component: {fileID: 5592391549358619557}
   m_Layer: 0
   m_Name: CestaHuevos_v2
   m_TagString: Untagged
@@ -1014,6 +1014,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5592391549358619557
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5126686922147979409}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 58.044598, y: 5.1469326, z: 47.748943}
+  m_Center: {x: 0, y: -30.000002, z: 0}
 --- !u!54 &154191113821973321
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1193,27 +1214,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!65 &5592391549358619557
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5126686922147979409}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 60.310345, y: 5.1469326, z: 50.014404}
-  m_Center: {x: -0.03811558, y: -29.861809, z: 0.12179331}
 --- !u!1 &5527970079848845578
 GameObject:
   m_ObjectHideFlags: 0

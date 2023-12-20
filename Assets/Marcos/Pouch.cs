@@ -38,10 +38,10 @@ public class Pouch : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Vector3.Dot(transform.up, Vector3.down) > 0);
-        Debug.Log("condicion 1 " + (Mathf.Abs(Trough.position.x - transform.position.x) <= 2f));
-        Debug.Log("condicion 2 " + (Mathf.Abs(Trough.position.z - transform.position.z) <= 1f));
-        Debug.Log("Trough time " + troughTime);
+        //Debug.Log(Vector3.Dot(transform.up, Vector3.down) > 0);
+        //Debug.Log("condicion 1 " + (Mathf.Abs(Trough.position.x - transform.position.x) <= 2f));
+        //Debug.Log("condicion 2 " + (Mathf.Abs(Trough.position.z - transform.position.z) <= 1f));
+        //Debug.Log("Trough time " + troughTime); 
 
         if (Mathf.Abs(Trough.position.x - transform.position.x) <= 2f &&
             Mathf.Abs(Trough.position.z - transform.position.z) <= 1f &&

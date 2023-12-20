@@ -4976,16 +4976,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a16edf150e218614cb0b308d9835fcce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trough: {fileID: 0}
+  Trough: {fileID: 1187647812}
   maxFillAmount: 5
   cornInTrough:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 453675056}
+  - {fileID: 2002589339}
+  - {fileID: 1628128240}
+  - {fileID: 29407370}
+  - {fileID: 1327784955}
   timePerFill: 2
-  timerPerFillEaten: 3
+  timerPerFillEaten: 10
 --- !u!114 &1662741098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7138,7 +7138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7549660867196284054, guid: 37f31beb8487daf4ab7d094aec194088, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

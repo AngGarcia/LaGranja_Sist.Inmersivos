@@ -28,7 +28,6 @@ public class FarmerDialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (startDialogue)
         {
             if (!dialoguePlaying)
@@ -55,7 +54,7 @@ public class FarmerDialogue : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Holi");
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.tag =="Player")
         {
             startDialogue = true;
         }
